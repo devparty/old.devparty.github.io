@@ -20,28 +20,65 @@
       text-align: center;
       background-color: #002b36;
     }
-    h1 {
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
-      height: 100%;
-      font-size: 2em;
-      color: #859900;
+    .text {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        height: 100%;
     }
-    h1 > small {
-      font-size: 0.5em;
+    h1 {
+      font-size: 2em;
+    }
+    .accent {
+        color: #859900;
+    }
+    a {
+        color: #B58900;
+        text-decoration: none;
+    }
+    a:hover {
+        border-bottom: 1px dotted #b58900;
+    }
+    p {
+      font-size: 0.8em;
       display: block;
-      color: hsla(175, 59%, 40%, 0.3);
+      color: hsla(175, 59%, 40%, 1);
       font-weight: 100;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 0.8em;
+        margin: 1em;
+        background-color: #268ad2;
+        color: #FFF;
+        border: 1px solid #002b36;
+        transition: opacity 0.2s;
+        text-transform: uppercase;
+        opacity: 0.8;
+        text-shadow: #839496 0 -1px 1px;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.35),0 2px 2px rgba(0,0,0,.1725),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.35),0 2px 2px rgba(0,0,0,.1725),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
+        border-bottom: 1px solid hsla(205, 69%, 39%, 1);
+        font-weight: normal;
+    }
+    .button:hover {
+        border-bottom: 1px solid hsla(205, 69%, 39%, 1);
+        opacity: 1;
     }
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <h1>
-      #devparty
-      <small>We will be online soon!</small>
-    </h1>
+    <div class="text">
+        <h1 class="accent">
+          <#devparty/>
+        </h1>
+        <p>O <span class="accent">#devparty</span> é uma comunidade no <a href="http://slack.com">Slack</a> dedicada a desenvolvedores.</p>
+        <p>Converse com outros desenvolvedores, discuta tecnologias, fale sobre novas ténicas.</p>
+        <a href="https://devparty.typeform.com/to/DcK6FC" class="button">Inscreva-se</a>
+        <p>Já é um membro? Faça <a href="http://devparty.slack.com">login</a>.</p>
+    </div>
   </div>
 </body>
 </html>
